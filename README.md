@@ -148,14 +148,14 @@ GLOBAL OPTIONS:
    --region value, --reg value                 AWS bucket region. (us-east-1, eu-west-1, ...) [$PLUGIN_REGION, $S3_REGION]
    --path-style, --ps                          use path style for bucket paths. (true for minio, false for aws) [$PLUGIN_PATH_STYLE]
    --acl value                                 upload files with acl (private, public-read, ...) (default: "private") [$PLUGIN_ACL]
-   --sftp-cache-root                           sftp root directory
-   --sftp-username                             sftp username
-   --sftp-password                             sftp password
-   --sftp-public-key-file                      sftp public key file path
-   --sftp-auth-method                          sftp auth method (PASSWORD, PUBLIC_KEY_FILE), in case of password use sftp-password else use ftp-public-key-file   
-   --sftp-host                                 sftp host
-   --sftp-port                                 sftp port
    --encryption value, --enc value             server-side encryption algorithm, defaults to none. (AES256, aws:kms) [$PLUGIN_ENCRYPTION]
+   --sftp-cache-root value                     sftp root directory [$SFTP_CACHE_ROOT]
+   --sftp-username value                       sftp username [$SFTP_USERNAME]
+   --sftp-password value                       sftp password [$SFTP_PASSWORD]
+   --ftp-public-key-file value                 sftp public key file path [$SFTP_PUBLIC_KEY_FILE]
+   --sftp-auth-method value                    sftp auth method, defaults to none. (PASSWORD, PUBLIC_KEY_FILE) [$SFTP_AUTH_METHOD]
+   --sftp-host value                           sftp host [$SFTP_HOST]
+   --sftp-port value                           sftp port [$SFTP_PORT]
    --help, -h                                  show help
    --version, -v                               print the version
 ```
